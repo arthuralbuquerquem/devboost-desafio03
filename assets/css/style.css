@@ -1,0 +1,251 @@
+:root {
+    /* Cores primárias */
+    --primary-light-color: #B01BE3;
+    --primary-normal-color: #9907CC;
+    --primary-dark-color: #72009A;
+    --hover-normal-color: #8707b6;
+
+    /* Cores secundárias */
+
+    --secundary-light-color: #040926;
+    --secundary-normal-color: #040926;
+    --segundary-dark-color: #000106;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#top {
+    width: 100%;
+    height: 688px;
+    background: rgb(11,8,46);
+    background: linear-gradient(180deg, rgba(11,8,46,1) 0%, rgba(53,8,92,1) 50%, rgba(38,8,75,1) 100%);
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1220px;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    list-style-type: none;
+    padding: 0px 25px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-bottom: 13px;
+}
+
+.menu ul li .active {
+    border-bottom: 4px solid var(--primary-normal-color);
+    border-radius: 3px;
+}
+
+.menu ul li a:hover {
+    border-bottom: 4px solid var(--primary-normal-color);
+    border-radius: 3px;
+}
+
+.menu .flagBR,
+.menu .arrowIdiom {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.menu .contactUs {
+    width: 155px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    background-color: var(--primary-normal-color);
+    border-radius: 20px;
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.menu .contactUs:hover {
+    background-color: var(--hover-normal-color);
+}
+
+/* PRIMARY CONTENT */
+
+.title h1 {
+    color: #FFF;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    width: 448px;
+    margin-top: 160px;
+    margin-bottom: 25px;
+}
+
+.title h1 span {
+    color: var(--primary-normal-color)
+}
+
+.subTitle p {
+    margin: 0px;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;;
+    font-size: 16px;
+    line-height: 26.8px;
+}
+
+.learnmoreButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    background-color: var(--primary-normal-color);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.learnmoreButton:hover {
+    background-color: var(--hover-normal-color);
+}
+
+.learnmoreButton a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.mainImage {
+    margin-top: 60px;
+}
+
+/* SOLUTIONS */
+
+.jobInfo {
+    height: 720px;
+    background-color: var(--secundary-light-color);
+}
+
+.title-andSubtitle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title-andSubtitle h4 {
+    margin: 0;
+    padding-top: 90px;
+    padding-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 20.4px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: var(--primary-normal-color);
+    text-transform: uppercase;
+}
+
+.title-andSubtitle h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #FFF;
+    margin-bottom: 100px;
+}
+
+.solutionBox {
+    width: 310px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.solutionImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 90px;
+    background-color: #130936;
+    border-radius: 45px;
+    margin-bottom: 30px;
+}
+
+.solutionBox h4 {
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFF;
+}
+
+.solutionBox p {
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23.8px;
+    text-align: center;
+    color: #FFF;
+}
+
+.solutionBox a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 35px;
+    background-color: var(--primary-normal-color);
+    border-radius: 18px;
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+}
+
+.solutionBox a:hover {
+    background-color: var(--hover-normal-color);
+}
+
