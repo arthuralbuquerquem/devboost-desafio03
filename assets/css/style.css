@@ -22,7 +22,7 @@ body {
 
 #top {
     width: 100%;
-    height: 688px;
+    height: 690px;
     background: rgb(11,8,46);
     background: linear-gradient(180deg, rgba(11,8,46,1) 0%, rgba(53,8,92,1) 50%, rgba(38,8,75,1) 100%);
 }
@@ -154,8 +154,7 @@ header {
 
 /* SOLUTIONS */
 
-.jobInfo {
-    height: 720px;
+.solutionInfo {
     background-color: var(--secundary-light-color);
 }
 
@@ -187,6 +186,7 @@ header {
     line-height: 40px;
     color: #FFF;
     margin-bottom: 100px;
+    margin-top: 0px;
 }
 
 .solutionBox {
@@ -196,6 +196,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 90px;
 }
 
 .solutionImage {
@@ -247,5 +248,101 @@ header {
 
 .solutionBox a:hover {
     background-color: var(--hover-normal-color);
+}
+
+/* ABOUT US */
+
+.aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(14,8,49);
+    background: linear-gradient(180deg, rgba(14,8,49,1) 0%, rgba(75,9,117,1) 95%);
+}
+
+.aboutUs-info {
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    margin: 0px;
+}
+
+.aboutUs-info h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: #FFF;
+    margin: 0px;
+}
+
+.aboutUs-info p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28.8px;
+    color: #FFF;
+}
+
+.aboutUs-info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    background-color: #FFF;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-dark-color);
+    font-size: 15px;
+}
+
+.aboutUs-image {
+    margin-top: 75px;
+    margin-left: 290px;
+    margin-bottom: 75px;
+}
+
+/* FEEDBACK */
+
+.feedback {
+    background-color: var(--secundary-light-color);
+}
+
+.title-andSubtitle #h3feedback {
+    margin-bottom: 35px;
+}
+
+.feedbackAreaUser {
+    max-width: 485px;
+}
+
+.feedbackAreaUser p {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+}
+
+.feedbackUserInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+
+.feedbackUserInfo img {
+    width: 45px;
+    height: 45px;
+}
+
+.feedbackUserAll p {
+    margin-left: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.feedbackUserAll .userName {
+    color: var(--primary-normal-color);
+    font-weight: bold;
 }
 
