@@ -48,11 +48,11 @@ header {
     align-items: center;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
 }
 
-.menu ul li{
+.menu ul li {
     list-style-type: none;
     padding: 0px 25px;
 }
@@ -346,3 +346,115 @@ header {
     font-weight: bold;
 }
 
+/* FOOTER */
+
+footer {
+    background: rgb(14,8,49);
+    background: linear-gradient(180deg, rgba(14,8,49,1) 0%, rgba(75,9,117,1) 95%);
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.footerSocial img {
+    cursor: pointer;
+}
+
+
+.footerSocialIcons {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 240px;
+}
+
+.footerTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footerTitle img {
+    align-self: center;
+    margin-right: 10px;
+}
+
+.footerTitle h4 {
+    margin: 0;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.adressInfo {
+    color: #FFF;
+    font-style: normal;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.lgpd ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lgpd ul li {
+    display: flex;
+    align-items: center;
+}
+
+.lgpd ul li::before {
+    content: "\2022";
+    color: #FFF;
+    display: inline-block; 
+    width: 1em;
+}
+
+.lgpd ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    line-height: 25px;
+    color: #FFF;
+}
+
+.lgpd ul li a:hover {
+    text-decoration: underline;
+}
+
+footer hr {
+    max-width: 1220px;
+    height: 0px;
+    border-top: none;
+    margin-top: 30px;
+    opacity: 10%;
+}
+
+.footerCopyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.footerCopyright a {
+    margin: 0;
+    color: #FFF;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    opacity: 50%;
+    text-decoration: none;
+}
+
+.footerCopyright a:hover {
+    text-decoration: underline;
+}
