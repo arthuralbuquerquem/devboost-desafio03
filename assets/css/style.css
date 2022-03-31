@@ -22,7 +22,6 @@ body {
 
 #top {
     width: 100%;
-    height: 690px;
     background: rgb(11,8,46);
     background: linear-gradient(180deg, rgba(11,8,46,1) 0%, rgba(53,8,92,1) 50%, rgba(38,8,75,1) 100%);
 }
@@ -46,6 +45,12 @@ header {
 .menu {
     display: flex;
     align-items: center;
+}
+
+#menuItens {
+    overflow-x:hidden;
+    overflow-y:auto;
+    transition: all ease .5s;
 }
 
 .menu ul {
@@ -465,26 +470,138 @@ footer hr {
 
 /* MEDIA QUERY */
 
-@media (max-width: 1024px) {
+@media (max-width: 850px) {
+    
     .container {
         padding: 0px 40px;
     }
 
+    .logo {
+        padding-top: 30px;
+    }
+
+    .menu ul,
+    .menu .flagBR,
+    .menu .arrowIdiom,
+    .menu .contactUs {
+        display: none;
+    }
+
+    .menu-opener {
+        display: block;
+        width: 30px;
+        padding-top: 20px;
+    }
+
+    .firstTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mainTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .mainImage img {
         width: 500px;
-        margin-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .solutions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .solutionInfo .title-andSubtitle h3 {
+        margin-bottom: 70px
+    }
+
+    .solutionBox {
+        margin-bottom: 40px;
+    }
+
+    .aboutUs {
+        flex-direction: column;
     }
 
     .aboutUs-info {
-        padding: 40px 40px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 80px;
     }
 
-    .aboutUs-image img {
-        width: 400px;
-        margin-right: 40px;
+    .aboutUs-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 60px 0px;
     }
 
     .footerInfo {
-        padding-top: 40px;
+        padding-top: 30px;
     }
+
+    .footerCopyright {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .title h1 {
+        font-size: 40px;
+        max-width: 350px;
+    }
+
+    .mainImage img {
+        width: 380px;
+        padding-bottom: 20px;
+    }
+
+    .aboutUs-image img {
+        width: 300px;
+    }
+
+    .feedbackArea {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feedbackAreaUser {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerInfo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footerSocial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .footerEnd {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer,
+    .lgpd {
+        padding: 5px;
+    }
+    
 }
